@@ -15,7 +15,7 @@
         }
 
         function set_image() {
-            const profileimage = document.getElementById("profileimage");
+            const profileimage = document.getElementById("image_url");
             const classs = document.getElementById("parent")
             const profileimageurl = profileimage.value;
             classs.style.backgroundImage = "url(" + profileimageurl + ")";
@@ -24,7 +24,7 @@
 </head>
 <body>
     <main>
-        <div class="parent">
+        <div class="parent" id="parent">
             <div class="child">
                 <p class="noti">1</p>
             </div>
