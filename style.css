@@ -1,0 +1,13 @@
+main {
+    width: 1024px;
+    height: 200px;
+    border: 2px gray solid;
+    margin: 0px auto;
+}
+
+.parent {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
