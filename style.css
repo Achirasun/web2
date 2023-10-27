@@ -1,18 +1,26 @@
+* {
+    margin: 0;
+}
+
 main {
     width: 1024px;
-    height: 960px;
-    border: 2px gray solid;
+    min-height: 960px;
+    border: 50px gray solid;
     margin: 0px auto;
     display: flex;
     flex-flow: column;
+    align-items: center;
 }
 
 .parent {
+    margin: 16px 0px 0px 0px;
     background-color: blue;
     width: 200px;
     height: 200px;
     position: relative;
     border-radius: 191px;
+    background-image: url("https://images8.alphacoders.com/132/1325999.jpeg");
+    background-size: cover;
 }
 
 .child {
@@ -21,16 +29,47 @@ main {
     height: 40px;
     border-radius: 191px;
     position: absolute;
-    top: 120px;
-    left: 120px;
+    top: 150px;
+    left: 150px;
+}
+
+.noti {
+    margin-top: 6px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+#profile-link {
+    margin: 32px;
+    color: black;
+    font-size: 48px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.flex {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 10px;
+    margin: 5px;
+}
+
+#profile-link:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    width: 900px;
-    height: 800px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px;
+    width: 100%px;
+    height: 100%;
+    margin: 25px 0px 50px 0px;
 }
 
 .gallery .image {
@@ -38,10 +77,48 @@ main {
     height: 200px;
     background-color: black;
     background-position: center;
+    background-size: cover;
 }
 
 #extend-col {
-    grid-row: span 2;
+    grid-column: span 2;
     background-color: red;
     width: 100%;
+}
+
+#extend-row {
+    grid-row: span 2;
+    background-color: yellow;
+    height: 100%;
+}
+
+.gallery .image:nth-child(1){
+    background-image: url("https://images5.alphacoders.com/859/859446.jpg");
+}
+.gallery .image:nth-child(2){
+    background-image: url("https://images8.alphacoders.com/736/736903.jpg");
+}
+.gallery .image:nth-child(3){
+    background-image: url("https://images7.alphacoders.com/132/1329403.jpeg");
+}
+.gallery .image:nth-child(4){
+    background-image: url("https://images3.alphacoders.com/859/859804.png");
+}
+.gallery .image:nth-child(5){
+    background-image: url("https://images4.alphacoders.com/728/728013.jpg");
+}
+.gallery .image:nth-child(6){
+    background-image: url("https://images.alphacoders.com/815/815308.png");
+}
+.gallery .image:nth-child(7){
+    background-image: url("https://images3.alphacoders.com/130/1306187.jpeg");
+}
+.gallery .image:nth-child(8){
+    background-image: url("https://images8.alphacoders.com/130/1301175.jpg");
+}
+.gallery .image:nth-child(9){
+    background-image: url("https://images3.alphacoders.com/713/713515.png");
+}
+.gallery .image:nth-child(10){
+    background-image: url("https://images8.alphacoders.com/890/890579.png");
 }
